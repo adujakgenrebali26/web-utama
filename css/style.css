@@ -201,7 +201,7 @@ body { scroll-padding-top: 64px; }
 
 /* Slightly rounded corners for header carousel buttons */
 .header-carousel .btn {
-    border-radius: 18px;
+    border-radius: 18px !important;
 }
 
 .cover-button-group {
@@ -213,11 +213,15 @@ body { scroll-padding-top: 64px; }
 }
 
 .header-carousel .cover-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 136px;
     padding: 12px 18px;
     line-height: 1.2;
-    text-align: center;
+    text-align: center !important;
     white-space: nowrap;
+    border-radius: 18px !important;
 }
 
 .header-carousel .btn-contact-person {
@@ -243,11 +247,14 @@ body { scroll-padding-top: 64px; }
 }
 
 .cover-bottom-actions .cover-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 152px;
-    border-radius: 18px;
+    border-radius: 18px !important;
     padding: 12px 18px;
     line-height: 1.2;
-    text-align: center;
+    text-align: center !important;
     white-space: nowrap;
 }
 
@@ -420,15 +427,21 @@ body { scroll-padding-top: 64px; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center !important;
     min-height: 180px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .06);
     border: 1px solid rgba(0, 0, 0, .04);
     background: #ffffff;
     padding: 1rem;
     transition: box-shadow .35s ease, transform .35s ease;
-    border-radius: 24px;
+    border-radius: 24px !important;
     overflow: hidden;
+}
+
+.cat-item h6,
+.cat-item p {
+    width: 100%;
+    text-align: center !important;
 }
 
 .cat-item:hover {
@@ -465,8 +478,12 @@ body { scroll-padding-top: 64px; }
 }
 
 .file-action-card {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     min-height: 158px;
     padding: 1.25rem;
+    border-radius: 24px !important;
     text-decoration: none;
 }
 
@@ -479,11 +496,13 @@ body { scroll-padding-top: 64px; }
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 48px;
     margin-bottom: 0;
     color: var(--dark);
     font-size: 15px;
     line-height: 1.25;
+    text-align: center !important;
 }
 
 .file-action-card:hover h6 {
