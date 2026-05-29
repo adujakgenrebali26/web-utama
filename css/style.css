@@ -770,18 +770,14 @@ html, body { overflow-x: hidden; }
 
 /* Intro video: centered and responsive */
 .video-wrapper { display:flex; justify-content:center; align-items:center; overflow: hidden; border-radius: 16px; }
-.intro-video { width: 100%; max-width: 560px; height: auto; display: block; border-radius: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
-.video-controls { display:flex; justify-content:center; gap:.5rem; margin-top:.5rem; }
-.video-controls .btn { min-width: 68px; }
+.intro-video { width: 100%; max-width: 720px; aspect-ratio: 16 / 9; height: auto; display: block; border: 0; border-radius: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
 .logo-below-video { display:block; margin: 0 auto; max-width:200px; }
 .logo-below-video.rounded-lg { border-radius: 18px !important; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
 @media (max-width: 768px) {
   .intro-video { max-width: 420px; }
-  .video-controls .btn { min-width: 60px; padding: .35rem .6rem; }
 }
 @media (max-width: 480px) {
   .intro-video { max-width: 320px; }
-  .video-controls { flex-wrap:wrap; gap:.4rem; }
 }
 
 /* Follow Us tweaks */
