@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #3b0303;
+    --primary: #ce0000;
     --secondary: #e6ff2b;
     --light: #EFFDF5;
     --dark: #2B3940;
@@ -204,6 +204,76 @@ body { scroll-padding-top: 64px; }
     border-radius: 18px;
 }
 
+.cover-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    max-width: 320px;
+}
+
+.header-carousel .cover-action-btn {
+    min-width: 136px;
+    padding: 12px 18px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header-carousel .btn-contact-person {
+    color: #FFFFFF;
+    background: rgba(43, 57, 64, .92);
+    border: 1px solid rgba(255, 255, 255, .85);
+}
+
+.header-carousel .btn-contact-person:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.cover-bottom-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 18px;
+    background: #FFFFFF;
+}
+
+.cover-bottom-actions .cover-action-btn {
+    min-width: 152px;
+    border-radius: 18px;
+    padding: 12px 18px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.cover-bottom-actions .btn-pengumpulan {
+    background: #FFFFFF;
+    border-color: var(--primary);
+}
+
+.cover-bottom-actions .btn-pengumpulan:hover {
+    color: #FFFFFF !important;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.cover-bottom-actions .btn-light {
+    background: #FFFFFF;
+    border-color: rgba(43, 57, 64, .18);
+    box-shadow: 0 6px 18px rgba(43, 57, 64, .08);
+}
+
+.cover-bottom-actions .btn-contact-person {
+    color: #FFFFFF;
+    background: rgba(43, 57, 64, .92);
+    border: 1px solid rgba(43, 57, 64, .92);
+}
+
 /* Gold-styled 'Panduan' button in the header carousel */
 .header-carousel .btn.btn-secondary {
     background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
@@ -267,6 +337,28 @@ body { scroll-padding-top: 64px; }
     .header-carousel .owl-carousel-item h1 {
         font-size: 30px;
         font-weight: 600;
+    }
+
+    .cover-button-group {
+        gap: 8px;
+        max-width: 280px;
+    }
+
+    .header-carousel .cover-action-btn {
+        min-width: 128px;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .cover-bottom-actions {
+        gap: 8px;
+        padding: 14px 12px;
+    }
+
+    .cover-bottom-actions .cover-action-btn {
+        min-width: 128px;
+        padding: 10px 14px;
+        font-size: 14px;
     }
 }
 
@@ -352,6 +444,52 @@ body { scroll-padding-top: 64px; }
     margin-bottom: 1rem;
 }
 
+.file-category-group {
+    margin-bottom: 3rem;
+}
+
+.file-category-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 800;
+    text-align: center;
+}
+
+.file-category-title i {
+    font-size: .85em;
+}
+
+.file-action-card {
+    min-height: 158px;
+    padding: 1.25rem;
+    text-decoration: none;
+}
+
+.file-action-card i {
+    font-size: 2.35rem;
+    margin-bottom: .85rem;
+}
+
+.file-action-card h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin-bottom: 0;
+    color: var(--dark);
+    font-size: 15px;
+    line-height: 1.25;
+}
+
+.file-action-card:hover h6 {
+    color: var(--primary);
+}
+
 
 
 /*** Job Listing ***/
@@ -424,13 +562,11 @@ body { scroll-padding-top: 64px; }
     transition: .3s;
 }
 
-/* Semangat Berkompetisi - dark-green semi-transparent background */
+/* Semangat Berkompetisi - primary red semi-transparent background */
 .competition-section {
-    background: rgba(3, 59, 38, 0.15); /* hijau tua dengan opacity agak pudar */
+    background: rgba(206, 0, 0, 0.15);
+    margin: 0;
     padding: 2.25rem 0;
-}
-.competition-section .container {
-    /* optionally add inner padding if needed */
 }
 .competition-section h1 {
     color: var(--dark);
@@ -547,6 +683,10 @@ body { scroll-padding-top: 64px; }
   .header-carousel .owl-carousel-item p { font-size: 13px !important; }
   .header-carousel .container { padding: 25px 0 25px 20px; }
   .cat-item { min-height: 160px; padding: 1rem; }
+  .file-category-group { margin-bottom: 2.5rem; }
+  .file-category-title { font-size: 24px; }
+  .file-action-card { min-height: 145px; }
+  .file-action-card h6 { min-height: auto; font-size: 14px; }
   .testimonial-carousel .owl-dot { width: 12px; height: 12px; border-width: 4px; }
 }
 
@@ -576,6 +716,9 @@ body { scroll-padding-top: 64px; }
   .row.g-4 .col-sm-6 { flex: 0 0 100%; max-width: 100%; }
   .cat-item { min-height: 140px; padding: 0.9rem; }
   .cat-item i { font-size: 2.4rem; }
+  .file-category-title { gap: 8px; font-size: 22px; }
+  .file-action-card { min-height: 132px; }
+  .file-action-card i { font-size: 2rem; margin-bottom: .75rem; }
 
   /* Modal */
   #welcomeModal .modal-dialog { max-width: 92%; margin: 1rem auto; }
