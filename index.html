@@ -105,8 +105,16 @@
                 <div class="row g-4 justify-content-center">
                     <div class="col-12 col-lg-10 text-center wow fadeInUp" data-wow-delay="0.1s">
                         <!-- Stacked: video (center), logo, then text -->
-                        <div class="video-wrapper mb-3" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-                            <iframe class="intro-video rounded" src="https://geo.dailymotion.com/player.html?video=xaj1vgy" style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;" allowfullscreen title="Dailymotion Video Player" allow="web-share"></iframe>
+                        <div class="video-wrapper mb-3">
+                            <div class="video-placeholder rounded overflow-hidden shadow-sm" style="width:min(100%,720px); aspect-ratio:16/9; position:relative; background:#000; cursor:pointer;">
+                                <img src="cover.webp" alt="Preview video ADUJAK Bali 2026" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.75);">
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background:rgba(0,0,0,0.25);">
+                                    <button type="button" id="loadVideoBtn" class="btn btn-light rounded-pill px-4 py-2 fw-semibold shadow">
+                                        <i class="fa fa-play me-2"></i> Putar Video
+                                    </button>
+                                </div>
+                            </div>
+                            <iframe class="intro-video rounded d-none" data-src="https://geo.dailymotion.com/player.html?video=xaj1vgy" src="" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="Dailymotion Video Player"></iframe>
                         </div>
 
                         <img src="LOGOADUJAK.webp" alt="Pildugen Logo" class="img-fluid rounded logo-below-video mb-3" style="max-width:200px;">
@@ -521,6 +529,4 @@
 
 
 </html>
-
-
 
