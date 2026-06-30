@@ -514,6 +514,19 @@ body { scroll-padding-top: 64px; }
     text-align: center !important;
 }
 
+.file-action-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.file-action-card-img {
+    width: min(100%, 230px);
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
 .file-action-card:hover h6 {
     color: var(--primary);
 }
